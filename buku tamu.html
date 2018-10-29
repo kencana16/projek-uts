@@ -1,0 +1,88 @@
+<html>
+ <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>buku tamu</title>
+ </head>
+ <body >
+ 
+   <div class=htop >
+		Ken<span>cana</span>
+   <hr style="border: dashed 1px #ff0000;margin:2px;">
+   </div>
+   <div class=wrap>  
+     <div class=navbar>
+       <ul>
+         <li><a href=home.html>HOME</a></li>
+          <li><a href=profile.html>PROFILE</a></li>
+          <li><a href=biodata.html>BIODATA</a></li>
+          <li><a href=galeri.html>GALERI</a></li>
+          <li><a href=buku%20tamu.html>BUKU TAMU</a></li>
+          <li><a href=kontak.html>KONTAK</a></li>
+       </ul>
+      </div>
+
+      <div class=judul><h1><b>BUKU TAMU</b></h1></div>
+  
+      <div class=content align=justify><p> <div align="center"> 
+	  
+	  
+			<form name="myform" method="post">
+				<table>
+					<tr><td colspan="3"><b><center>BUKU TAMU</center></b></td></tr>	
+					<tr><td></td><td></td><td></td></tr>
+					<tr><td>Nama</td>
+					<td> : </td>
+					<td><input type="text" name="Nama"></td> </tr>
+					
+					<tr><td>Email</td>
+					<td> : </td>
+					<td><input type="email" name="email"></td></tr>
+   
+					<tr><td>Golongan Darah</td>
+					<td> : </td>
+					<td>
+					<input type="radio" name="gol_darah" > A
+					<input type="radio" name "gol_darah" >B
+					<input type="radio" name="gol_darah" > AB
+					<input type="radio" name="gol_darah" > O 					
+					</td></tr>
+   
+					<tr><td>Komentar</td>
+					<td> : </td>
+					<td><textarea input type="text" name="komentar" rows=5 cols=25></textarea></td>
+					</tr>
+					<tr>
+					<td><br><input type="submit" name="submit" value="Simpan" style="width:80px;"></td>
+					<td><br></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+			<script type="text/javascript">
+				var myform = document.forms['myform']
+				myform.onsubmit = function() {
+					if (this.elements['Nama'].value == '')
+					{ alert('Nama belum diisi !'); }
+     
+					if (this.elements['email'].value == '')
+					{ alert('Email belum diisi !'); }
+					
+					if (this.elements['komentar'].value == '')
+					{ alert('Komentar belum diisi !'); }
+					
+					return false;
+				}
+			</script>
+ </div>
+   
+   </div>
+   
+  <footer>
+	<marquee behavior="alternate" scrollamount="15" height="30" width="30%">&copy kencana16</marquee><br>
+	<marquee behavior="alternate" scrollamount="10" height="30" width="30%">riyan.kencana16@gmail.com</marquee>
+	</footer>
+  
+ </body>
+</html>
